@@ -1,0 +1,40 @@
+.image-slider{
+    position: relative;
+}
+.previous,.next{
+    /* height: 35px; */
+    width: 60px;
+    /* background-color: red; */
+    position: absolute;
+    z-index: 2;
+    top:50%;
+    box-sizing: border-box;
+    border:30px solid blue;
+    transform: translateY(-50%);
+    /* cursor: pointer; */
+}
+.previous{
+    left:10px;
+    border-color: transparent red transparent transparent;
+}
+.next{
+    right:10px;
+    border-color: transparent transparent transparent red;
+}
+.slide-indexing{
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    gap: 15px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.circle{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    /* background-color: blue; */
+    border: 2px solid black;
+    padding: 1px;
+    cursor: pointer;
+}
